@@ -39,6 +39,7 @@ const fruits = ['Mango', 'Apple', 'Lemon', 'orange'];
 console.log(fruits.splice(1,1));
 const index = fruits.indexOf('Apple');
 
+//splice
 if (index !== -1)
 {
   fruits.splice(index, 2);
@@ -71,8 +72,17 @@ function islong(vegetables)
 const array1=[vegetables.filter(islong)];
 console.log(array1);
 
-//stringto
+//toString
 const dogNames = ['Rocket','Flash','Bella','Slugger'];
+console.log(typeof dogNames);
 console.log(dogNames.toString());
-//sdfds
+const Names = {
+'1':'Rocket',
+'2':'Flash',
+'3':'Bella',
+'4':'Slugger'
+};
+console.log(Names.toString());
+console.log(typeof(dogNames));
+
 
