@@ -85,4 +85,39 @@ const Names = {
 console.log(Names.toString());
 console.log(typeof(dogNames));
 
+//fill()
+const arr1 = [1, 2, 3, 4];
+console.log(arr1.fill(0, 2, 4));
+console.log(arr1.fill(5, 1));
+console.log(arr1.fill(6));
 
+//sort()
+const num = [1, 30, 497, 21, 1000];
+num.sort();
+console.log(num);
+
+//shift
+const n1 = [1,2,3,4,5,6];
+const firstElementpop = n1.shift();
+console.log(n1);
+
+//unshift
+const n2 = [1,2,3,4,5,6];
+const firstElementadd = n2.unshift(8);
+console.log(n2);
+
+//reverse
+const num2 = ['one', 'two', 'three'];
+const reversed = num2.reverse();
+console.log('reversed:', reversed);
+console.log('num2:', num2);
+
+//reduce
+const num3 = [1, 2, 3, 4];
+const initialValue = 0;
+const sumWithInitial = num3.reduce(
+  (accumulator, currentValue) => accumulator + currentValue,
+  initialValue
+);
+
+console.log(sumWithInitial);
